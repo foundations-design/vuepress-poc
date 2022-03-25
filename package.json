@@ -16,6 +16,7 @@
       "@auth0/auth0-vue": "^1.0.0",
       "axios": "^0.26.1",
       "axios-retry": "^3.2.4",
+      "jwt-decode": "^3.1.2",
       "moment": "^2.29.1"
    }
 }
