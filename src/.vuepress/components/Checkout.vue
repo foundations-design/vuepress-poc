@@ -59,6 +59,8 @@
 									</b-list-group-item>
 								</b-list-group>
 								<br />
+								<br />
+								<br />
 								<b-button
 									v-if="!userIsSubscriber"
 									variant="primary"
@@ -66,7 +68,7 @@
 									href="javascript:void(0)"
 									@click="openCheckout"
 								>
-									Checkout
+									Open Checkout
 								</b-button>
 								<router-link to="/profile" v-if="userIsSubscriber">
 									<b-button v-if="userIsSubscriber" variant="primary">
@@ -81,12 +83,12 @@
 				<b-col></b-col>
 			</b-row>
 		</b-container>
-		<b-modal id="checkout-error" ok-only title="Error with Checkout">
+		<!-- <b-modal id="checkout-error" ok-only title="Error with Checkout">
 			<p class="my-4">
 				There's been an error with checkout. Please contact support to help
 				get it resolved.
 			</p>
-		</b-modal>
+		</b-modal> -->
 	</div>
 </template>
 

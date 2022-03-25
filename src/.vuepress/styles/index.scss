@@ -1,0 +1,204 @@
+// Define variable defaults
+$theme-colors: (
+  "primary": #8D87FF,
+  "success": #00bba3,
+  "info": #3035ff,
+);
+
+$body-bg: #fff;
+
+
+h1 {
+  margin-bottom: 1.5rem !important;
+}
+
+h2 {
+  color: #3035FF;
+}
+
+h4 {
+  margin-top: 2rem !important;
+}
+
+.card-img, .card-img-top {
+  padding: 20px
+}
+
+.card {
+  border: 2px solid rgba(0, 0, 0, 0.125)
+}
+
+.card-link {
+  color: #3035FF !important;
+  font-weight: bold;
+}
+
+.card-link:hover {
+  color: #8D87FF !important;
+}
+
+// Hero 
+p#hero-lead.lead {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+// Home
+#qsLoginBtn {
+  color: #FFFFFF;
+  font-weight: bold;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.card-img-top-courses {
+  img {
+    max-height: 130px;
+    max-width: 356px;
+    margin: 0 auto;
+  }
+}
+
+.courses-rows {
+  margin-bottom: 70px;
+}
+
+a.coming-soon {
+  color: grey !important;
+}
+
+// Lesson Page
+.lesson-row {
+  max-width: 90%;
+  align-items: left;
+}
+
+.lesson-container {
+  margin-top: 30px;
+}
+
+.get-environment-container {
+  margin-bottom: 60px;
+}
+
+.btn-primary.get-environment-btn {
+  color: #FFFFFF;
+  border: 4px solid #8D87FF;
+  background-color: #8D87FF;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 20px 40px 20px 40px;
+  border-radius: 0px;
+}
+
+.btn-primary.get-environment-btn:hover {
+  color: #8D87FF;
+  background-color: #FFFFFF;
+  border: 4px solid #8D87FF;
+}
+
+.btn-primary.open-environment-btn {
+  color: #FFFFFF;
+  background-color: #8D87FF;
+  border: 4px solid #8D87FF;
+  border-radius: 0px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.btn-primary.open-environment-btn:hover {
+  color: #8D87FF;
+  background-color: #FFFFFF;
+  border: 4px solid #8D87FF;
+  font-weight: bold;
+}
+
+// About
+h1.about-section {
+  color: #00bba3;
+}
+
+h4.faq-question {
+  color: #3035ff;
+}
+
+p.about-paragraph {
+  line-height: 2em;
+}
+
+b.about-bold {
+  color: #3035ff;
+}
+
+// Checkout
+.standard-subscription-module .card-header {
+    color: #FFFFFF;
+    border: 4px solid #8D87FF;
+    background-color: black;
+    font-weight: bold;
+    padding: 20px 40px 20px 40px;
+    border-radius: 0px;
+}
+
+.checkout-btn {
+  color: #FFFFFF;
+  border: 4px solid #8D87FF;
+  background-color: #8D87FF;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 20px 40px 20px 40px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  color: #8D87FF;
+  background-color: #FFFFFF;
+  border: 4px solid #8D87FF;
+}
+
+// Profile
+#user-page-container {
+  margin-top: 60px;
+}
+
+#profile-details-container {
+  background-color: #f8f9fa;
+  padding: 30px 30px;
+}
+
+#profile-details-container h5 {
+  padding-top: 10px;
+}
+
+#profile-details-title {
+  color: #00bba3;
+}
+
+.profile-detail {
+  color: #3035ff;
+  padding-right: 10px;
+}
+
+// Footer
+#footer {
+  margin-top: 50px;
+  min-height: 50px;
+}
+
+// Course-specific
+#python-fundamentals {
+  color: #00BBA3;
+}
+
+@media only screen and (max-width: 600px) {
+  .lesson-row {
+    max-width: 100%;
+  }
+
+  a.nav-link {
+    font-size: .6rem;
+  }
+}
