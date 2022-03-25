@@ -12,8 +12,7 @@ export default defineClientAppEnhance(({ app, router, siteData }) => {
    // There's probably a cleaner way to do this
    router.beforeResolve(to => {
       // If I can access the frontmatter here, I can automatically block routes by setting the a frontmatter field (ex. requiresAuth:true)
-      if (to.meta.title === "Gated Example Page") {
-         console.log(to.meta.title)
+      if (to.meta.requiresAuth) {
          return authGuard(to)
       }
    })
