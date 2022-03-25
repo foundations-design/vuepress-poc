@@ -8,7 +8,6 @@
 			<!-- show logout when authenticated -->
 			<div v-else>
 				<button @click="logout">Log out</button>
-				<p>{{ user }}</p>
 			</div>
 		</div>
 	</div>
