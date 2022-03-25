@@ -1,0 +1,14 @@
+{
+   "name": "v4",
+   "scripts": {
+      "dev": "vuepress dev src",
+      "build": "vuepress build src"
+   },
+   "version": "1.0.0",
+   "main": "index.js",
+   "author": "earlman <earl.mangulabnan@gmail.com>",
+   "license": "MIT",
+   "devDependencies": {
+      "vuepress": "^2.0.0-beta.36"
+   }
+}
