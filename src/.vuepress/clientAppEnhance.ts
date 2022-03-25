@@ -6,9 +6,10 @@ export default defineClientAppEnhance(({ app, router, siteData }) => {
 
    app.use(
       createAuth0({
-         domain: 'dev--gfwsnfx.us.auth0.com',
-         client_id: 'nG7u9oSmtffIkMRSNbCb96vqFcb4voqa',
-         // redirect_uri: '<MY_CALLBACK_URL>'
+         domain: 'moonriselabs.us.auth0.com',
+         client_id: 'WMsT695PH1j7fGGwvmpns1F6WzogKSmB',
+         redirect_uri: window.location.origin,
+         audience: 'https://api.moonriselabs.com'
       })
    );
 })
