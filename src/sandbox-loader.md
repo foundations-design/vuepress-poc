@@ -1,4 +1,4 @@
 # Sandbox Loader
 
-<!-- <SandboxLoader sandboxType="python_basic"/> -->
+<SandboxLoader sandboxType="python_basic"/>
 <!-- <Test /> -->
