@@ -693,6 +693,11 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
+dotenv@^16.0.0:
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.0.tgz#c619001253be89ebb638d027b609c75c26e47411"
+  integrity sha512-qD9WU0MPM4SWLPJy/r2Be+2WgQj8plChsyrCNQzW/0WjvcJQiKQJ9mH3ZgB3fxbUUxgc/11ZJ0Fi5KiimWGz2Q==
+
 electron-to-chromium@^1.4.84:
   version "1.4.92"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.92.tgz#88996e9aceb3a500710fd439abfa89b6cc1ac56c"
@@ -1679,6 +1684,11 @@ vue@^3.2.28, vue@^3.2.30:
     "@vue/runtime-dom" "3.2.31"
     "@vue/server-renderer" "3.2.31"
     "@vue/shared" "3.2.31"
+
+vuepress-plugin-global-variables@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-global-variables/-/vuepress-plugin-global-variables-0.2.0.tgz#4003e9d1a934f767c76f134390ecf60732bb6ea1"
+  integrity sha512-6Tx6VcmYXx02OtwLRFF7h5OQ1g8HQ4N5kppbd/5YvTrfMtc5k1uP1032EFCGHeXtwwyycwPvWlCBZ0TONk5wjw==
 
 vuepress-vite@2.0.0-beta.36:
   version "2.0.0-beta.36"

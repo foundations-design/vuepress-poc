@@ -2,8 +2,6 @@ import { defineClientAppEnhance } from '@vuepress/client'
 import { createRouter, createWebHashHistory } from 'vue-router';
 import { createAuth0, authGuard } from '@auth0/auth0-vue'
 
-
-
 export default defineClientAppEnhance(({ app, router, siteData }) => {
 
    // IDK if this is required for authGuards, but it's included in the Auth0 docs

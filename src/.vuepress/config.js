@@ -1,4 +1,7 @@
 path = require("path");
+require("dotenv").config();
+
+console.log(process.env.VUE_APP_CHARGEBEE_SITE);
 
 module.exports = {
    title: "VuePress POC",
@@ -10,6 +13,13 @@ module.exports = {
          "@vuepress/register-components",
          {
             componentsDir: path.resolve(__dirname, "./components"),
+         },
+      ],
+      [
+         {
+            define: {
+               env: process.env,
+            },
          },
       ],
    ],

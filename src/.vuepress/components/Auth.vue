@@ -15,6 +15,10 @@
 
 
 <script>
+console.log(env.VUE_APP_CHARGEBEE_SITE);
+console.log(env.VUE_APP_API_BASE_ENDPOINT);
+console.log(env.VUE_APP_MUX_DATA_ENV_KEY);
+
 export default {
 	data: function () {
 		return {
