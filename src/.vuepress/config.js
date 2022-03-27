@@ -13,13 +13,14 @@ module.exports = {
             componentsDir: path.resolve(__dirname, "./components"),
          },
       ],
-      [
-         {
-            define: {
-               env: process.env,
-            },
-         },
-      ],
+      // [
+      //    {
+      //       define: {
+      //          // env: process.env,
+      //          test: "run",
+      //       },
+      //    },
+      // ],
    ],
    themeConfig: {
       sidebar: ["/gated-example-message.md", "/gated-example-page.md", "payments.md", "sandbox-loader.md"],
