@@ -6,7 +6,7 @@
 			@click="createEnvironment()"
 			v-if="!sandboxDetails.loaded"
 			:disabled="isCurrentlyCreatingSandbox"
-			class="get-environment-btn"
+			class="get-environment-btn btn-primary"
 		>
 			<b-spinner small v-if="isCurrentlyCreatingSandbox"></b-spinner>
 			{{ button.text }}

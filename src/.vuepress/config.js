@@ -13,4 +13,7 @@ module.exports = {
          },
       ],
    ],
+   themeConfig: {
+      sidebar: ["/gated-example-message.md", "/gated-example-page.md", "payments.md", "sandbox-loader.md"],
+   },
 };
