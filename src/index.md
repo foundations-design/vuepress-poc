@@ -1,4 +1,6 @@
 # Demo
-<!-- 
-<Auth />
-<Profile /> -->
+
+<ClientOnly>
+   <Auth />
+   <Profile />
+</ClientOnly>
