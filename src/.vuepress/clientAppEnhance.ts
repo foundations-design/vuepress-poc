@@ -6,19 +6,21 @@ import { createAuth0, authGuard } from '@auth0/auth0-vue'
 export default defineClientAppEnhance(({ app, router, siteData }) => {
    
    // IDK if this is required for authGuards, but it's included in the Auth0 docs
+   // update: next line seems to be causing problems at build
    // router.options.history = createWebHashHistory()
-   // update: prev line seems to be causing problems at build
    
-   // There's probably a cleaner way to do this
-   router.beforeResolve(to => {
-      // If I can access the frontmatter here, I can automatically block routes by setting the a frontmatter field (ex. requiresAuth:true)
-      if (to.meta.requiresAuth) {
-         // return authGuard(to)
-      }
-   })
+
    
-   if (typeof window !== "undefined") {
-      // This will only run in the browser where window is defined, so add your event listeners here
+   if (!__VUEPRESS_SSR__) { // for non-SSR-friendly features 
+
+      // Add Route Guards based on markdown frontmatter
+      router.beforeResolve(to => {
+         if (to.meta.requiresAuth) {
+            return authGuard(to)
+         }
+      })
+      
+      // Initialize Auth0 plugin
       app.use(
          createAuth0({
             domain: 'moonriselabs.us.auth0.com',
@@ -28,8 +30,4 @@ export default defineClientAppEnhance(({ app, router, siteData }) => {
          })
       );
    }
-
-   // const isBrowser = typeof window !== "undefined"
-   // if (!isBrowser) {
-   // }
 })
