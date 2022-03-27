@@ -1,8 +1,6 @@
 path = require("path");
 require("dotenv").config();
 
-console.log(process.env.VUE_APP_CHARGEBEE_SITE);
-
 module.exports = {
    title: "VuePress POC",
    description: "Just playing around",
