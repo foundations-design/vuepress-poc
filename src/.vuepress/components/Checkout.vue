@@ -96,8 +96,8 @@
 import jwt_decode from "jwt-decode";
 import axios from "axios";
 
-const chargebeeSite = "moonriselabs-test";
-const moonriseApiBaseUrl = "https://dev-api.moonriselabs.com/v1";
+const chargebeeSite = env.VUE_APP_CHARGEBEE_SITE;
+const moonriseApiBaseUrl = env.VUE_APP_API_BASE_ENDPOINT;
 const axiosClient = axios.create({ baseURL: moonriseApiBaseUrl });
 
 export default {

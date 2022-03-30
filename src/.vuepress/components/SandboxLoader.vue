@@ -45,7 +45,7 @@ import moment from "moment";
 import axios from "axios";
 import axiosRetry from "axios-retry";
 
-const moonriseApiBaseUrl = "https://dev-api.moonriselabs.com/v1";
+const moonriseApiBaseUrl = env.VUE_APP_API_BASE_ENDPOINT;
 const axiosRetryClient = axios.create({ baseURL: moonriseApiBaseUrl });
 const axiosNoRetryClient = axios.create({ baseURL: moonriseApiBaseUrl });
 
