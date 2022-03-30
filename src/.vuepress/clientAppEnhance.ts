@@ -23,12 +23,12 @@ export default defineClientAppEnhance(({ app, router, siteData }) => {
       // Initialize Auth0 plugin
       app.use(
          createAuth0({
-            // domain: 'moonriselabs.us.auth0.com',
-            // client_id: 'WMsT695PH1j7fGGwvmpns1F6WzogKSmB',
-            // audience: 'https://api.moonriselabs.com'
-            domain: 'dev--gfwsnfx.us.auth0.com',
-            client_id: 'nG7u9oSmtffIkMRSNbCb96vqFcb4voqa',
-            redirect_uri: window.location.origin, //causes build error
+            domain: 'moonriselabs.us.auth0.com',
+            client_id: 'WMsT695PH1j7fGGwvmpns1F6WzogKSmB',
+            audience: 'https://api.moonriselabs.com'
+            // domain: 'dev--gfwsnfx.us.auth0.com',
+            // client_id: 'nG7u9oSmtffIkMRSNbCb96vqFcb4voqa',
+            // redirect_uri: window.location.origin, //causes build error
          })
       );
    }
