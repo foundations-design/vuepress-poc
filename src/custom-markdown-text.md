@@ -1,3 +1,5 @@
+# Custom Markdown Text
+
 This text will be replaced:
 
 <SandboxLoaderWithCustomText>
