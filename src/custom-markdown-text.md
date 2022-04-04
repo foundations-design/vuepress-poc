@@ -1,6 +1,5 @@
 # Custom Markdown Text
 
-This text will be replaced:
 <ClientOnly>
 <SandboxLoaderWithCustomText>
    To get started, click the **Get Environment Details** banner at the top of the page to create your own development environment and get
