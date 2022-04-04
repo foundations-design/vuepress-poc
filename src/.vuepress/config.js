@@ -7,20 +7,17 @@ module.exports = {
    port: 3000,
    head: [["script", { src: "https://js.chargebee.com/v2/chargebee.js" }]],
    plugins: [
+      {
+         define: {
+            envVar: process.env,
+         },
+      },
       [
          "@vuepress/register-components",
          {
             componentsDir: path.resolve(__dirname, "./components"),
          },
       ],
-      // [
-      //    {
-      //       define: {
-      //          // env: process.env,
-      //          test: "run",
-      //       },
-      //    },
-      // ],
    ],
    themeConfig: {
       sidebar: ["/gated-example-message.md", "/gated-example-page.md", "payments.md", "sandbox-loader.md"],
