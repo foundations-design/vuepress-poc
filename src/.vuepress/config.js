@@ -20,6 +20,6 @@ module.exports = {
       ],
    ],
    themeConfig: {
-      sidebar: ["/gated-example-message.md", "/gated-example-page.md", "payments.md", "sandbox-loader.md"],
+      sidebar: ["/gated-example-message.md", "/gated-example-page.md", "payments.md", "sandbox-loader.md", "custom-markdown-text.md"],
    },
 };
