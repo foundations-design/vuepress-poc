@@ -35,6 +35,21 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@mux-elements/mux-video@^0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@mux-elements/mux-video/-/mux-video-0.4.4.tgz#13989905543579de1eb212230afa769e803dc938"
+  integrity sha512-EamDNDiCdv6baPyWHBjH7AxCqtfEGPcUGUFKs/PkumZAj+DscftbnXzOahy1CX83KKa95fndVmVHDJlnVkIH6A==
+  dependencies:
+    "@mux-elements/playback-core" "0.3.2"
+
+"@mux-elements/playback-core@0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@mux-elements/playback-core/-/playback-core-0.3.2.tgz#e47026d2e0eb86ff1ac9368c20187e2752d37e99"
+  integrity sha512-r3BbJtyNcvKxtpGkDKhKdNvq9Bn59/sIbR2nXdbOYNvnqi1vf363YIFKodfO6hzMWEv7zyj97nzqKVSLtTyC1A==
+  dependencies:
+    hls.js "1.1.5"
+    mux-embed "^4.7.0"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -1104,6 +1119,11 @@ hash-sum@^2.0.0:
   resolved "https://registry.yarnpkg.com/hash-sum/-/hash-sum-2.0.0.tgz#81d01bb5de8ea4a214ad5d6ead1b523460b0b45a"
   integrity sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==
 
+hls.js@1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/hls.js/-/hls.js-1.1.5.tgz#923a8a8cfdf09542578696d47c8ae435da981ffd"
+  integrity sha512-mQX5TSNtJEzGo5HPpvcQgCu+BWoKDQM6YYtg/KbgWkmVAcqOCvSTi0SuqG2ZJLXxIzdnFcKU2z7Mrw/YQWhPOA==
+
 human-signals@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
@@ -1285,6 +1305,11 @@ mdurl@^1.0.1:
   resolved "https://registry.yarnpkg.com/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
   integrity sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4=
 
+media-chrome@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/media-chrome/-/media-chrome-0.6.0.tgz#0b8b43fe53958d7d8effff1c8b957aa48316d452"
+  integrity sha512-KF2yMvVSzoDFuGFNQQ2iQ622bSbHC5UI5kJAmHfiNpQXT87///epYwn4ivHBi6gH8nrEg3sMQJBKqXPnUeBA9w==
+
 medium-zoom@^1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-1.0.6.tgz#9247f21ca9313d8bbe9420aca153a410df08d027"
@@ -1322,6 +1347,11 @@ ms@2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+
+mux-embed@^4.7.0:
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/mux-embed/-/mux-embed-4.8.0.tgz#ddc45a2e4835b32ea076f0ad28e13204aa221479"
+  integrity sha512-8uFfGlY14Hpi6mTRTry6KmEV/SNUt3rSeCIayopPa9hv0V1IhPqMl0tMiwMt+Z7BW3pFfsbeqvyQqLqSGh+PBg==
 
 nanoid@^3.3.1:
   version "3.3.1"

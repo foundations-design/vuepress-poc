@@ -15,10 +15,12 @@
    },
    "dependencies": {
       "@auth0/auth0-vue": "^1.0.0",
+      "@mux-elements/mux-video": "^0.4.4",
       "axios": "^0.26.1",
       "axios-retry": "^3.2.4",
       "dotenv": "^16.0.0",
       "jwt-decode": "^3.1.2",
+      "media-chrome": "^0.6.0",
       "moment": "^2.29.1"
    }
 }
