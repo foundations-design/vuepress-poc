@@ -27,8 +27,6 @@ export default defineClientAppEnhance(({ app, router, siteData }) => {
             client_id: 'WMsT695PH1j7fGGwvmpns1F6WzogKSmB',
             audience: 'https://api.moonriselabs.com',
             redirect_uri: window.location.origin, //causes build error
-            // domain: 'dev--gfwsnfx.us.auth0.com',
-            // client_id: 'nG7u9oSmtffIkMRSNbCb96vqFcb4voqa',
          })
       );
    }
