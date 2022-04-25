@@ -5,8 +5,8 @@ const { registerComponentsPlugin } = require('@vuepress/plugin-register-componen
 
 export default defineUserConfig(
    {
-      title: "VuePress POC",
-      description: "Just playing around",
+      title: "Moonrise Labs",
+      description: "A lab-based education platform for software development and cloud computing.",
       port: 3000,
       theme: localTheme({
 
