@@ -5,6 +5,7 @@ module.exports = {
    title: "VuePress POC",
    description: "Just playing around",
    port: 3000,
+   theme: path.resolve(__dirname, './theme'),
    head: [["script", { src: "https://js.chargebee.com/v2/chargebee.js" }]],
    plugins: [
       {
