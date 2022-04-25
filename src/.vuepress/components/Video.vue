@@ -77,8 +77,6 @@ export default {
   },
   watch: {
     playbackId: function(newVal, oldVal) {
-      // eslint-disable-next-line no-console
-      console.log('Prop changed: ', newVal, ' | was: ', oldVal)
       this.setSignedMuxVideoUrl()
     }
   },

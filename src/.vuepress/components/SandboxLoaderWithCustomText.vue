@@ -26,7 +26,6 @@ export default {
 	methods: {
 		onUpdateUsername(username) {
 			this.updatedText = this.text.replace("TABLE_NAME_VARIABLE", username);
-			console.log(this.updatedText);
 		},
 	},
 	components: {

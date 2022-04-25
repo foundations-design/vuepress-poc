@@ -109,22 +109,15 @@ export default {
 	},
 	async mounted() {
 		const token = await this.getToken();
-		console.log("token is set");
-		console.log(token);
 		this.setUserAsSubscriberIfTokenHasCorrectPermissions(token);
-		console.log("user might be set");
-
 		this.cbInstance = window.Chargebee.init({
 			site: chargebeeSite,
 		});
 	},
 	methods: {
 		setUserAsSubscriberIfTokenHasCorrectPermissions(token) {
-			console.log("token");
 			var decoded = jwt_decode(token);
-			console.log("decoded");
 			var permissions = decoded["permissions"];
-			console.log("permissions");
 			if (permissions.includes("access:standard")) {
 				this.userIsSubscriber = true;
 			}
@@ -155,8 +148,6 @@ export default {
 						})
 						.then((response) => response.data)
 						.catch((error) => {
-							/* eslint-disable no-console */
-							console.log(error);
 							/* eslint-enable no-console */
 							this.raiseCheckoutErrorNotification();
 						});
@@ -168,8 +159,6 @@ export default {
 					// Checkout closed here
 				},
 				success: function (hostedPageId) {
-					/* eslint-disable no-console */
-					console.log(hostedPageId);
 					/* eslint-enable no-console */
 					// Hosted page id will be unique token for the checkout that happened
 					// You can pass this hosted page id to your backend
@@ -178,8 +167,6 @@ export default {
 				},
 				step: function (value) {
 					// value -> which step in checkout
-					/* eslint-disable no-console */
-					console.log(value);
 					/* eslint-enable no-console */
 				},
 			});
@@ -190,18 +177,12 @@ export default {
 				loaded: () => {},
 				close: () => {},
 				paymentSourceAdd: (status) => {
-					/* eslint-disable no-console */
-					console.log("payment source add" + status);
 					/* eslint-enable no-console */
 				},
 				paymentSourceUpdate: (status) => {
-					/* eslint-disable no-console */
-					console.log("payment source update" + status);
 					/* eslint-enable no-console */
 				},
 				paymentSourceRemove: (status) => {
-					/* eslint-disable no-console */
-					console.log("payment source removed" + status);
 					/* eslint-enable no-console */
 				},
 			});
