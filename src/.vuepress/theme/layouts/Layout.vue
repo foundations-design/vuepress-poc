@@ -14,11 +14,13 @@ const muxPlaybackId = computed(() => {
   <ParentLayout>
     <template #page-top>
       <div class="video">
-         <VideoComponent 
-            v-if="muxPlaybackId"
-            :key="muxPlaybackId"
-            :playbackId="muxPlaybackId"
-         />
+         <ClientOnly>
+            <VideoComponent 
+               v-if="muxPlaybackId"
+               :key="muxPlaybackId"
+               :playbackId="muxPlaybackId"
+            />
+         </ClientOnly>
       </div>
     </template>
   </ParentLayout>

@@ -47,6 +47,7 @@
 import "@mux-elements/mux-video";
 import 'media-chrome';
 import axios from "axios";
+import AuthOnly from "../../components/AuthOnly.vue"
 
 const moonriseApiBaseUrl = envVar.VUE_APP_API_BASE_ENDPOINT
 const axiosNoRetryClient = axios.create({ baseURL: moonriseApiBaseUrl });
