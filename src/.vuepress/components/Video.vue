@@ -1,6 +1,5 @@
 <template>
     <div class="video-container">
-       "hi"
       <media-controller autohide="2">
         <mux-video
           slot="media" 
