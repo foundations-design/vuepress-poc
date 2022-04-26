@@ -2,6 +2,9 @@ import { path } from '@vuepress/utils'
 import { defineUserConfig } from 'vuepress'
 import { localTheme } from './theme'
 const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
+require('dotenv').config()
+
+
 
 export default defineUserConfig(
    {
@@ -25,6 +28,7 @@ export default defineUserConfig(
    ],
       plugins: [
          {
+            name: 'environment-variables',
             define: { //currently being ignored in the latest beta
                envVar: process.env, 
             },
