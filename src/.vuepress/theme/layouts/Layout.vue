@@ -1,17 +1,31 @@
 <script setup>
+import { reactive, computed } from 'vue'
+import { usePageData, usePageFrontmatter } from '@vuepress/client'
+import VideoComponent from './Video.vue'
 import ParentLayout from '@vuepress/theme-default/lib/client/layouts/Layout.vue'
+
+const frontmatter = usePageFrontmatter()
+const muxPlaybackId = computed(() => {
+   return frontmatter.value.muxPlaybackId
+   })
 </script>
 
 <template>
   <ParentLayout>
-    <template #page-bottom>
-      <div class="my-footer">This is my custom page footer</div>
+    <template #page-top>
+      <div class="video">
+         <VideoComponent 
+            v-if="muxPlaybackId"
+            :key="muxPlaybackId"
+            :playbackId="muxPlaybackId"
+         />
+      </div>
     </template>
   </ParentLayout>
 </template>
 
 <style lang="css">
-.my-footer {
+.video {
   text-align: center;
 }
 </style>

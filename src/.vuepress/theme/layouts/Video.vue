@@ -62,7 +62,7 @@ export default {
   },
   methods: {
     async setSignedMuxVideoUrl() {
-      const token = await this.$auth.getTokenSilently();
+      const token = await this.$auth0.getAccessTokenSilently();
       const signedPlaybackData = await axiosNoRetryClient.get("/signed-mux-url?playback_id=" + this.playbackId, {
         headers: {
           Authorization: `Bearer ${token}`
