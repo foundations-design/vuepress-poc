@@ -4,8 +4,6 @@ import { localTheme } from './theme'
 const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
 require('dotenv').config()
 
-
-
 export default defineUserConfig(
    {
       title: "Moonrise Labs",
