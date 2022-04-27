@@ -2,7 +2,9 @@
    "name": "v4",
    "scripts": {
       "dev": "vuepress dev src",
-      "build": "vuepress build src"
+      "build": "npm run test && vuepress build src",
+      "test": "mdspell -r \"./src/**/*.md\"",
+      "spellcheck": "mdspell \"./src/**/*.md\""
    },
    "version": "1.0.0",
    "main": "index.js",
@@ -20,6 +22,7 @@
       "axios-retry": "^3.2.4",
       "dotenv": "^16.0.0",
       "jwt-decode": "^3.1.2",
+      "markdown-spellcheck": "^1.3.1",
       "media-chrome": "^0.6.0",
       "moment": "^2.29.1"
    }
